@@ -56,7 +56,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
 
-    "& a": {
+    "& a.accountMain": {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -114,9 +114,11 @@ class Header extends Component {
         >
           <Grid>
             <Link
+              className="accountMain"
               to="account"
               onMouseEnter={() => this.setState({ accountIcon: "hovered" })}
               onMouseLeave={() => this.setState({ accountIcon: "notHovered" })}
+              style={{position: "relative"}}
             >
               {this.state.accountIcon === "notHovered" ? (
                 <PersonOutlineIcon />
@@ -131,6 +133,7 @@ class Header extends Component {
           </Grid>
           <Grid>
             <Link
+              className="accountMain"
               to="favorite"
               onMouseEnter={() => this.setState({ heartIcon: "hovered" })}
               onMouseLeave={() => this.setState({ heartIcon: "notHovered" })}
@@ -146,6 +149,7 @@ class Header extends Component {
           </Grid>
           <Grid>
             <Link
+              className="accountMain"
               to="cart"
               onMouseEnter={() => this.setState({ cartIcon: "hovered" })}
               onMouseLeave={() => this.setState({ cartIcon: "notHovered" })}
