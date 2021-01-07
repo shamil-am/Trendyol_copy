@@ -1,6 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
-
+import Navigator from './components/Navigator'
 //
 import Header from "./components/Header"
 //
@@ -19,6 +19,7 @@ const App = (props) => {
   return (
     <Grid container className={classes.container}>
       <Header/>
+      <Navigator/>
     </Grid>
   );
 };

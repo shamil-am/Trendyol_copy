@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import AllInboxIcon from "@material-ui/icons/AllInbox";
@@ -20,7 +19,7 @@ const styles = {
     position: "absolute",
     zIndex: "9",
     backgroundColor: "#fff",
-    top: "3rem",
+    top: "3.5rem",
     "& ul": {
       listStyle: "none",
       padding: "0",

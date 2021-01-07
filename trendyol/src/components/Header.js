@@ -61,7 +61,8 @@ const styles = {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      margin: ".5rem",
+      margin: "0 .5rem",
+      padding: ".5rem 0",
       textDecoration: "none",
       color: "#333333",
     },
@@ -76,7 +77,7 @@ class Header extends Component {
   };
   render() {
     return (
-      <Grid container>
+      <Grid container style={{paddingBottom: "1rem"}}>
         <Grid
           item
           xs={12}
@@ -118,7 +119,7 @@ class Header extends Component {
               to="account"
               onMouseEnter={() => this.setState({ accountIcon: "hovered" })}
               onMouseLeave={() => this.setState({ accountIcon: "notHovered" })}
-              style={{position: "relative"}}
+              style={{ position: "relative" }}
             >
               {this.state.accountIcon === "notHovered" ? (
                 <PersonOutlineIcon />
