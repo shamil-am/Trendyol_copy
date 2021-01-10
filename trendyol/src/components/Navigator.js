@@ -84,14 +84,16 @@ const styles = {
 class Navigator extends Component {
   render() {
     return (
-      <div style={{ width: "100%", paddingBottom: "1rem"}}>
+      <div style={{ width: "100%", paddingBottom: "1rem" }}>
         <ul className={this.props.classes.navigatorUl}>
           <li>
             <Link to="kadin">KADIN</Link>
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
-                  <Link to="/" style={{ fontSize: "1rem" }}>Giyim</Link>
+                  <Link to="/" style={{ fontSize: "1rem", fontWeight: "600" }}>
+                    Giyim
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">Elbise</Link>
@@ -136,7 +138,10 @@ class Navigator extends Component {
               <div>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
                       Ayakkabı
                     </Link>
                   </li>
@@ -158,7 +163,10 @@ class Navigator extends Component {
                 </ul>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
                       Aksesuar & Çanta
                     </Link>
                   </li>
@@ -182,7 +190,12 @@ class Navigator extends Component {
               <div>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>Pijama Takımı</Link>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
+                      Pijama Takımı
+                    </Link>
                   </li>
                   <li>
                     <Link to="/">Gecelik</Link>
@@ -202,7 +215,13 @@ class Navigator extends Component {
                 </ul>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}> Lüks & Designer</Link>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
+                      {" "}
+                      Lüks & Designer
+                    </Link>
                   </li>
                   <li>
                     <Link to="/">Lüks Çanta</Link>
@@ -224,7 +243,7 @@ class Navigator extends Component {
 
               <ul>
                 <li>
-                  <Link to="/" style={{ fontSize: "1rem" }}>
+                  <Link to="/" style={{ fontSize: "1rem", fontWeight: "600" }}>
                     Kozmetik & Kişisel Bakım
                   </Link>
                 </li>
@@ -263,7 +282,9 @@ class Navigator extends Component {
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
-                  <Link to="/" style={{ fontSize: "1rem" }}>Giyim</Link>
+                  <Link to="/" style={{ fontSize: "1rem", fontWeight: "600" }}>
+                    Giyim
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">T-shirt</Link>
@@ -302,7 +323,12 @@ class Navigator extends Component {
               <div>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>Ayakkabı</Link>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
+                      Ayakkabı
+                    </Link>
                   </li>
                   <li>
                     <Link to="/">Spor Ayakkabı</Link>
@@ -322,7 +348,10 @@ class Navigator extends Component {
                 </ul>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
                       Kozmetik & Kişisel Bakım
                     </Link>
                   </li>
@@ -343,7 +372,10 @@ class Navigator extends Component {
               <div>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
                       Saat & Gözlük & Aksesuar
                     </Link>
                   </li>
@@ -368,7 +400,12 @@ class Navigator extends Component {
                 </ul>
                 <ul>
                   <li>
-                    <Link to="/" style={{ fontSize: "1rem" }}>İç Giyim</Link>
+                    <Link
+                      to="/"
+                      style={{ fontSize: "1rem", fontWeight: "600" }}
+                    >
+                      İç Giyim
+                    </Link>
                   </li>
                   <li>
                     <Link to="/">Boxer</Link>
@@ -386,7 +423,9 @@ class Navigator extends Component {
               </div>
               <ul>
                 <li>
-                  <Link to="/" style={{ fontSize: "1rem" }}>Spor & Outdoor</Link>
+                  <Link to="/" style={{ fontSize: "1rem", fontWeight: "600" }}>
+                    Spor & Outdoor
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">Eşofman</Link>
@@ -424,7 +463,9 @@ class Navigator extends Component {
               </ul>
               <ul>
                 <li>
-                  <Link to="/" style={{ fontSize: "1rem" }}>Elektronik</Link>
+                  <Link to="/" style={{ fontSize: "1rem", fontWeight: "600" }}>
+                    Elektronik
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">Traş Makinesi</Link>

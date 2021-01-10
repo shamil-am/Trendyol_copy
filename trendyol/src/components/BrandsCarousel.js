@@ -47,9 +47,6 @@ const styles = {
       top: "0",
       "&::before": {
         content: "''",
-        // backgroundColor: "teal",
-        // transform: "rotate(180deg)",
-
         display: "block",
         position: "absolute",
         zIndex: "9",
@@ -107,6 +104,10 @@ const styles = {
           maxWidth: "100%",
         },
       },
+      '& span': {
+        display: "inline-block",
+        marginTop: ".5rem",
+      }
     },
   },
 };
@@ -121,22 +122,28 @@ class BrandsCarousel extends Component {
       slidesToScroll: 7,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 992,
           settings: {
+            slidesToShow: 8,
+            slidesToScroll: 3,
             arrows: false,
             dots: false,
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
+            slidesToShow: 6,
+            slidesToScroll: 3,
             arrows: false,
             dots: false,
           },
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
             arrows: false,
             dots: false,
           },
@@ -189,7 +196,7 @@ class BrandsCarousel extends Component {
                   <img src={koton} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Koton</span>
                 </div>
               </div>
             </Link>
@@ -201,7 +208,7 @@ class BrandsCarousel extends Component {
                   <img src={pullandbear} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Pull & Bear</span>
                 </div>
               </div>
             </Link>
@@ -213,7 +220,7 @@ class BrandsCarousel extends Component {
                   <img src={migros} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Migros</span>
                 </div>
               </div>
             </Link>
@@ -225,7 +232,7 @@ class BrandsCarousel extends Component {
                   <img src={trendyolman} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Trendyolman</span>
                 </div>
               </div>
             </Link>
@@ -237,7 +244,7 @@ class BrandsCarousel extends Component {
                   <img src={pierrecardin} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>PierreCardin</span>
                 </div>
               </div>
             </Link>
@@ -249,7 +256,7 @@ class BrandsCarousel extends Component {
                   <img src={defacto} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Defacto</span>
                 </div>
               </div>
             </Link>
@@ -261,7 +268,7 @@ class BrandsCarousel extends Component {
                   <img src={hummel} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Hummel</span>
                 </div>
               </div>
             </Link>
@@ -273,7 +280,7 @@ class BrandsCarousel extends Component {
                   <img src={derimod} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Derimod</span>
                 </div>
               </div>
             </Link>
@@ -285,7 +292,7 @@ class BrandsCarousel extends Component {
                   <img src={hotic} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Hotiç</span>
                 </div>
               </div>
             </Link>
@@ -297,7 +304,7 @@ class BrandsCarousel extends Component {
                   <img src={kotonkids} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Koton Kids</span>
                 </div>
               </div>
             </Link>
@@ -309,7 +316,7 @@ class BrandsCarousel extends Component {
                   <img src={lcwaikiki} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Lc waikiki</span>
                 </div>
               </div>
             </Link>
@@ -321,7 +328,7 @@ class BrandsCarousel extends Component {
                   <img src={aquadipolo} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Aqua di polo</span>
                 </div>
               </div>
             </Link>
@@ -333,7 +340,7 @@ class BrandsCarousel extends Component {
                   <img src={lufian} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Lufian</span>
                 </div>
               </div>
             </Link>
@@ -345,7 +352,7 @@ class BrandsCarousel extends Component {
                   <img src={avva} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Avva</span>
                 </div>
               </div>
             </Link>
@@ -357,7 +364,7 @@ class BrandsCarousel extends Component {
                   <img src={dynamo} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Dynamo</span>
                 </div>
               </div>
             </Link>
@@ -369,7 +376,7 @@ class BrandsCarousel extends Component {
                   <img src={mavi} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Mavi</span>
                 </div>
               </div>
             </Link>
@@ -381,7 +388,7 @@ class BrandsCarousel extends Component {
                   <img src={adidas} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Adidas</span>
                 </div>
               </div>
             </Link>
@@ -393,7 +400,7 @@ class BrandsCarousel extends Component {
                   <img src={mudo} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Mudo</span>
                 </div>
               </div>
             </Link>
@@ -405,7 +412,7 @@ class BrandsCarousel extends Component {
                   <img src={guess} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Guess</span>
                 </div>
               </div>
             </Link>
@@ -417,7 +424,7 @@ class BrandsCarousel extends Component {
                   <img src={altinyildiz} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Altınyıldız</span>
                 </div>
               </div>
             </Link>
@@ -429,7 +436,7 @@ class BrandsCarousel extends Component {
                   <img src={nike} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Nike</span>
                 </div>
               </div>
             </Link>
@@ -441,7 +448,7 @@ class BrandsCarousel extends Component {
                   <img src={dufy} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Dufy</span>
                 </div>
               </div>
             </Link>
@@ -453,7 +460,7 @@ class BrandsCarousel extends Component {
                   <img src={tommylife} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Tommy life</span>
                 </div>
               </div>
             </Link>
@@ -465,7 +472,7 @@ class BrandsCarousel extends Component {
                   <img src={skechers} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Skechers</span>
                 </div>
               </div>
             </Link>
@@ -477,7 +484,7 @@ class BrandsCarousel extends Component {
                   <img src={jackjones} alt="" />
                 </div>
                 <div>
-                  <span>Sana Ozel</span>
+                  <span>Jack & Jones</span>
                 </div>
               </div>
             </Link>
