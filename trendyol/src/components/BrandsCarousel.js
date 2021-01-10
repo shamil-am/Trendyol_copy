@@ -7,13 +7,83 @@ import { withStyles } from "@material-ui/core/styles";
 import sanaOzel from "../images/carouselBrands/seninicin.png";
 import sendeAl from "../images/carouselBrands/coksatanlar.png";
 import oyunEglence from "../images/carouselBrands/WebOyuneglence_202012301841.jpeg";
+import koton from "../images/carouselBrands/koton.png";
+import pullandbear from "../images/carouselBrands/pullBear.png";
+import migros from "../images/carouselBrands/migros__brand__37266.png";
+import trendyolman from "../images/carouselBrands/trendyolman__brand__15508.png";
+import pierrecardin from "../images/carouselBrands/pierre-cardin__brand__121.png";
+import defacto from "../images/carouselBrands/defacto__brand__3268.png";
+import hummel from "../images/carouselBrands/hummel__brand__7770.png";
+import derimod from "../images/carouselBrands/derimod__brand__35.png";
+import hotic from "../images/carouselBrands/hotic.png";
+import kotonkids from "../images/carouselBrands/kotonkids.png";
+import lcwaikiki from "../images/carouselBrands/lcwaikiki.png";
+import aquadipolo from "../images/carouselBrands/aquadipolo.png";
+import lufian from "../images/carouselBrands/lufian.png";
+import avva from "../images/carouselBrands/avva.jpg";
+import dynamo from "../images/carouselBrands/dynamo.jpg";
+import mavi from "../images/carouselBrands/mavi.png";
+import adidas from "../images/carouselBrands/adidas_.png";
+import mudo from "../images/carouselBrands/mudo.png";
+import guess from "../images/carouselBrands/guess.png";
+import altinyildiz from "../images/carouselBrands/altinyildiz.jpg";
+import nike from "../images/carouselBrands/nike.png";
+import dufy from "../images/carouselBrands/dufy.png";
+import tommylife from "../images/carouselBrands/tommylife.png";
+import skechers from "../images/carouselBrands/skechers.png";
+import jackjones from "../images/carouselBrands/jasckjones.png";
 
+//
 const styles = {
   carouselHolder: {
-    border: "2px solid red",
-    '& div[style=width: "100%"]': {
-      backgroundColor: "teal",
+    "& .slick-arrow.slick-prev": {
+      width: "2rem",
+      height: "100%",
+      zIndex: "9",
+      left: "-2rem",
+      background: "url(https://cdn.dsmcdn.com/web/production/slider-arrow-passive.svg) no-repeat center",
+      backgroundColor: "#fff",
+      transform: "rotateZ(180deg)",
+      top: "0",
+      "&::before": {
+        content: "''",
+        // backgroundColor: "teal",
+        // transform: "rotate(180deg)",
+
+        display: "block",
+        position: "absolute",
+        zIndex: "9",
+        background:
+          "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%)",
+        width: "3rem",
+        height: "100%",
+        top: "0 ",
+        right: "2rem",
+      },
+      
     },
+    "& .slick-arrow.slick-next": {
+      width: "2rem",
+      height: "100%",
+      zIndex: "9",
+      right: "-2rem",
+      background: "url(https://cdn.dsmcdn.com/web/production/slider-arrow-passive.svg) no-repeat center",
+      backgroundColor: "#fff",
+      "&::before": {
+        content: "''",
+        display: "block",
+        position: "absolute",
+        zIndex: "9",
+        background:
+          "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%)",
+        width: "3rem",
+        height: "100%",
+        top: "0 ",
+        right: "2rem",
+      },
+    },
+    paddingBottom: "1rem",
+    width: "100%",
     "& a": {
       display: "inline-block",
       textAlign: "center",
@@ -23,10 +93,16 @@ const styles = {
       color: "#333",
       fontSize: ".75rem",
       fontWeight: "600",
-      marginRight: "1.25rem",
+      "&:hover .imageHolder": {
+        border: "1px solid #f28283",
+      },
+      "&:hover span": {
+        color: "#f28283",
+      },
       "& .imageHolder": {
         border: "1px solid #e6e6e6",
         borderRadius: "50%",
+        overflow: "hidden",
         "& img": {
           maxWidth: "100%",
         },
@@ -40,9 +116,32 @@ class BrandsCarousel extends Component {
     const settings = {
       dots: false,
       infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
+      speed: 1000,
+      slidesToShow: 11,
+      slidesToScroll: 7,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            dots: false,
+          },
+        },
+      ],
     };
     return (
       <div className={this.props.classes.carouselHolder}>
@@ -51,7 +150,7 @@ class BrandsCarousel extends Component {
             <Link to="/sanaozel">
               <div>
                 <div className="imageHolder">
-                  <img src={sanaOzel} />
+                  <img src={sanaOzel} alt="sanaozel" />
                 </div>
                 <div>
                   <span>Sana Ozel</span>
@@ -63,7 +162,7 @@ class BrandsCarousel extends Component {
             <Link to="/sanaozel">
               <div>
                 <div className="imageHolder">
-                  <img src={sendeAl} />
+                  <img src={sendeAl} alt="" />
                 </div>
                 <div>
                   <span>Sen de al</span>
@@ -75,7 +174,7 @@ class BrandsCarousel extends Component {
             <Link to="/sanaozel">
               <div>
                 <div className="imageHolder">
-                  <img src={oyunEglence} />
+                  <img src={oyunEglence} alt="" />
                 </div>
                 <div>
                   <span>Oyun & Eglence</span>
@@ -87,7 +186,7 @@ class BrandsCarousel extends Component {
             <Link to="/sanaozel">
               <div>
                 <div className="imageHolder">
-                  <img src={sanaOzel} />
+                  <img src={koton} alt="" />
                 </div>
                 <div>
                   <span>Sana Ozel</span>
@@ -99,7 +198,7 @@ class BrandsCarousel extends Component {
             <Link to="/sanaozel">
               <div>
                 <div className="imageHolder">
-                  <img src={sanaOzel} />
+                  <img src={pullandbear} alt="" />
                 </div>
                 <div>
                   <span>Sana Ozel</span>
@@ -108,7 +207,280 @@ class BrandsCarousel extends Component {
             </Link>
           </div>
           <div>
-            <h3>6</h3>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={migros} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={trendyolman} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={pierrecardin} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={defacto} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={hummel} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={derimod} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={hotic} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={kotonkids} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={lcwaikiki} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={aquadipolo} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={lufian} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={avva} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={dynamo} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={mavi} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={adidas} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={mudo} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={guess} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={altinyildiz} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={nike} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={dufy} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={tommylife} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={skechers} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/sanaozel">
+              <div>
+                <div className="imageHolder">
+                  <img src={jackjones} alt="" />
+                </div>
+                <div>
+                  <span>Sana Ozel</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </Slider>
       </div>

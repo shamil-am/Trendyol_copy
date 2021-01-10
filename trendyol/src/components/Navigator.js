@@ -12,6 +12,8 @@ const styles = {
     padding: "0",
     margin: "0",
     flexWrap: "wrap",
+    borderTop: "1px solid #cecece",
+    borderBottom: "1px solid #cecece",
     "& > li": {
       "&:hover .submenu": {
         display: "flex",
@@ -22,8 +24,9 @@ const styles = {
         color: "#333",
         textDecoration: "none",
         transition: ".2s",
-        position: "relative",
         fontWeight: "700",
+        position: "relative",
+
         "&::before": {
           content: '""',
           height: "2px",
@@ -46,10 +49,10 @@ const styles = {
   },
   submenu: {
     position: "absolute",
-    zIndex: "9",
+    zIndex: "99",
     top: "100%",
     left: "0",
-    width: "100%",
+    width: "-webkit-fill-available",
     backgroundColor: "#fff",
     border: "1px solid #cecece",
     // display: "flex",
@@ -61,7 +64,7 @@ const styles = {
       listStyle: "none",
       padding: "0",
       height: "fit-content",
-      margin: ".75rem",
+      margin: ".75rem 1.5rem",
       "& li": {
         "& a": {
           textDecoration: "none",
@@ -81,172 +84,176 @@ const styles = {
 class Navigator extends Component {
   render() {
     return (
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", paddingBottom: "1rem"}}>
         <ul className={this.props.classes.navigatorUl}>
           <li>
             <Link to="kadin">KADIN</Link>
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
-                  <Link style={{ fontSize: "1rem" }}>Giyim</Link>
+                  <Link to="/" style={{ fontSize: "1rem" }}>Giyim</Link>
                 </li>
                 <li>
-                  <Link>Elbise</Link>
+                  <Link to="/">Elbise</Link>
                 </li>
                 <li>
-                  <Link>Sweatshirt</Link>
+                  <Link to="/">Sweatshirt</Link>
                 </li>
                 <li>
-                  <Link>T-shirt</Link>
+                  <Link to="/">T-shirt</Link>
                 </li>
                 <li>
-                  <Link>Pantalon</Link>
+                  <Link to="/">Pantalon</Link>
                 </li>
                 <li>
-                  <Link>Gömlek</Link>
+                  <Link to="/">Gömlek</Link>
                 </li>
                 <li>
-                  <Link>Mont</Link>
+                  <Link to="/">Mont</Link>
                 </li>
                 <li>
-                  <Link>Eşofman</Link>
+                  <Link to="/">Eşofman</Link>
                 </li>
                 <li>
-                  <Link>Trençkot</Link>
+                  <Link to="/">Trençkot</Link>
                 </li>
                 <li>
-                  <Link>Etek</Link>
+                  <Link to="/">Etek</Link>
                 </li>
                 <li>
-                  <Link>Tayt</Link>
+                  <Link to="/">Tayt</Link>
                 </li>
                 <li>
-                  <Link>Tesettür</Link>
+                  <Link to="/">Tesettür</Link>
                 </li>
                 <li>
-                  <Link>Büyük Beden</Link>
+                  <Link to="/">Büyük Beden</Link>
                 </li>
                 <li>
-                  <Link>Plaj Giyimi</Link>
+                  <Link to="/">Plaj Giyimi</Link>
                 </li>
               </ul>
               <div>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>Ayakkabı</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}>
+                      Ayakkabı
+                    </Link>
                   </li>
                   <li>
-                    <Link>Topuklu Ayakkabı</Link>
+                    <Link to="/">Topuklu Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Sneaker</Link>
+                    <Link to="/">Sneaker</Link>
                   </li>
                   <li>
-                    <Link>Günlük Ayakkabı</Link>
+                    <Link to="/">Günlük Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Bot & Bootie</Link>
+                    <Link to="/">Bot & Bootie</Link>
                   </li>
                   <li>
-                    <Link>Terlik</Link>
+                    <Link to="/">Terlik</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>Aksesuar & Çanta</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}>
+                      Aksesuar & Çanta
+                    </Link>
                   </li>
                   <li>
-                    <Link>Çanta</Link>
+                    <Link to="/">Çanta</Link>
                   </li>
                   <li>
-                    <Link>Saat</Link>
+                    <Link to="/">Saat</Link>
                   </li>
                   <li>
-                    <Link>Takı</Link>
+                    <Link to="/">Takı</Link>
                   </li>
                   <li>
-                    <Link>Güneş Gözlüğü</Link>
+                    <Link to="/">Güneş Gözlüğü</Link>
                   </li>
                   <li>
-                    <Link>Cüzdan</Link>
+                    <Link to="/">Cüzdan</Link>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>Pijama Takımı</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}>Pijama Takımı</Link>
                   </li>
                   <li>
-                    <Link>Gecelik</Link>
+                    <Link to="/">Gecelik</Link>
                   </li>
                   <li>
-                    <Link>Sütyen</Link>
+                    <Link to="/">Sütyen</Link>
                   </li>
                   <li>
-                    <Link>İç Çamaşırı Takımları</Link>
+                    <Link to="/">İç Çamaşırı Takımları</Link>
                   </li>
                   <li>
-                    <Link>Fantazi Giyim</Link>
+                    <Link to="/">Fantazi Giyim</Link>
                   </li>
                   <li>
-                    <Link>Çorap</Link>
+                    <Link to="/">Çorap</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}> Lüks & Designer</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}> Lüks & Designer</Link>
                   </li>
                   <li>
-                    <Link>Lüks Çanta</Link>
+                    <Link to="/">Lüks Çanta</Link>
                   </li>
                   <li>
-                    <Link>Lüks Giyim</Link>
+                    <Link to="/">Lüks Giyim</Link>
                   </li>
                   <li>
-                    <Link>Lüks Ayakkabı</Link>
+                    <Link to="/">Lüks Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Tasarım Giyim</Link>
+                    <Link to="/">Tasarım Giyim</Link>
                   </li>
                   <li>
-                    <Link>Tasarım Ayakkabı</Link>
+                    <Link to="/">Tasarım Ayakkabı</Link>
                   </li>
                 </ul>
               </div>
 
               <ul>
                 <li>
-                  <Link style={{ fontSize: "1rem" }}>
+                  <Link to="/" style={{ fontSize: "1rem" }}>
                     Kozmetik & Kişisel Bakım
                   </Link>
                 </li>
                 <li>
-                  <Link>Parfüm</Link>
+                  <Link to="/">Parfüm</Link>
                 </li>
                 <li>
-                  <Link>Göz makyajı</Link>
+                  <Link to="/">Göz makyajı</Link>
                 </li>
                 <li>
-                  <Link>Cilt Bakımı</Link>
+                  <Link to="/">Cilt Bakımı</Link>
                 </li>
                 <li>
-                  <Link>Saç Bakımı</Link>
+                  <Link to="/">Saç Bakımı</Link>
                 </li>
                 <li>
-                  <Link>Makyaj</Link>
+                  <Link to="/">Makyaj</Link>
                 </li>
                 <li>
-                  <Link>Ağız Bakımı</Link>
+                  <Link to="/">Ağız Bakımı</Link>
                 </li>
                 <li>
-                  <Link>Cinsel Sağlık</Link>
+                  <Link to="/">Cinsel Sağlık</Link>
                 </li>
                 <li>
-                  <Link>Hijyenik Ped</Link>
+                  <Link to="/">Hijyenik Ped</Link>
                 </li>
                 <li>
-                  <Link>Epilasyon Ürünleri  </Link>
+                  <Link to="/">Epilasyon Ürünleri  </Link>
                 </li>
               </ul>
             </div>
@@ -256,186 +263,186 @@ class Navigator extends Component {
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
-                  <Link style={{ fontSize: "1rem" }}>Giyim</Link>
+                  <Link to="/" style={{ fontSize: "1rem" }}>Giyim</Link>
                 </li>
                 <li>
-                  <Link>T-shirt</Link>
+                  <Link to="/">T-shirt</Link>
                 </li>
                 <li>
-                  <Link>Sweartshirt</Link>
+                  <Link to="/">Sweartshirt</Link>
                 </li>
                 <li>
-                  <Link>Kazak & Hırka</Link>
+                  <Link to="/">Kazak & Hırka</Link>
                 </li>
                 <li>
-                  <Link>Gömlek</Link>
+                  <Link to="/">Gömlek</Link>
                 </li>
                 <li>
-                  <Link>Eşofman</Link>
+                  <Link to="/">Eşofman</Link>
                 </li>
                 <li>
-                  <Link>Pantolon</Link>
+                  <Link to="/">Pantolon</Link>
                 </li>
                 <li>
-                  <Link>Ceket</Link>
+                  <Link to="/">Ceket</Link>
                 </li>
                 <li>
-                  <Link>Jean</Link>
+                  <Link to="/">Jean</Link>
                 </li>
                 <li>
-                  <Link>Polo Yaka T-shirt</Link>
+                  <Link to="/">Polo Yaka T-shirt</Link>
                 </li>
                 <li>
-                  <Link>Takım Elbise</Link>
+                  <Link to="/">Takım Elbise</Link>
                 </li>
                 <li>
-                  <Link>Şort</Link>
+                  <Link to="/">Şort</Link>
                 </li>
               </ul>
               <div>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>Ayakkabı</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}>Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Spor Ayakkabı</Link>
+                    <Link to="/">Spor Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Günlük Ayakkabı</Link>
+                    <Link to="/">Günlük Ayakkabı</Link>
                   </li>
                   <li>
-                    <Link>Sneaker</Link>
+                    <Link to="/">Sneaker</Link>
                   </li>
                   <li>
-                    <Link>Klassik</Link>
+                    <Link to="/">Klassik</Link>
                   </li>
                   <li>
-                    <Link>Koşu & Antreman</Link>
+                    <Link to="/">Koşu & Antreman</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>
+                    <Link to="/" style={{ fontSize: "1rem" }}>
                       Kozmetik & Kişisel Bakım
                     </Link>
                   </li>
                   <li>
-                    <Link>Parfüm</Link>
+                    <Link to="/">Parfüm</Link>
                   </li>
                   <li>
-                    <Link>Cinsel Sağlık</Link>
+                    <Link to="/">Cinsel Sağlık</Link>
                   </li>
                   <li>
-                    <Link>Traş Makinesi</Link>
+                    <Link to="/">Traş Makinesi</Link>
                   </li>
                   <li>
-                    <Link>Traş Bıçağı</Link>
+                    <Link to="/">Traş Bıçağı</Link>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>
+                    <Link to="/" style={{ fontSize: "1rem" }}>
                       Saat & Gözlük & Aksesuar
                     </Link>
                   </li>
                   <li>
-                    <Link>Saat</Link>
+                    <Link to="/">Saat</Link>
                   </li>
                   <li>
-                    <Link>Güneş Gözlüğü</Link>
+                    <Link to="/">Güneş Gözlüğü</Link>
                   </li>
                   <li>
-                    <Link>Cüzdan</Link>
+                    <Link to="/">Cüzdan</Link>
                   </li>
                   <li>
-                    <Link>Kemer</Link>
+                    <Link to="/">Kemer</Link>
                   </li>
                   <li>
-                    <Link>Çanta</Link>
+                    <Link to="/">Çanta</Link>
                   </li>
                   <li>
-                    <Link>Erkek Takı</Link>
+                    <Link to="/">Erkek Takı</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <Link style={{ fontSize: "1rem" }}>İç Giyim</Link>
+                    <Link to="/" style={{ fontSize: "1rem" }}>İç Giyim</Link>
                   </li>
                   <li>
-                    <Link>Boxer</Link>
+                    <Link to="/">Boxer</Link>
                   </li>
                   <li>
-                    <Link>Çorap</Link>
+                    <Link to="/">Çorap</Link>
                   </li>
                   <li>
-                    <Link>Pijama</Link>
+                    <Link to="/">Pijama</Link>
                   </li>
                   <li>
-                    <Link>Atlet</Link>
+                    <Link to="/">Atlet</Link>
                   </li>
                 </ul>
               </div>
               <ul>
                 <li>
-                  <Link style={{ fontSize: "1rem" }}>Spor & Outdoor</Link>
+                  <Link to="/" style={{ fontSize: "1rem" }}>Spor & Outdoor</Link>
                 </li>
                 <li>
-                  <Link>Eşofman</Link>
+                  <Link to="/">Eşofman</Link>
                 </li>
                 <li>
-                  <Link>Spor Ayakkabı</Link>
+                  <Link to="/">Spor Ayakkabı</Link>
                 </li>
                 <li>
-                  <Link>T-shirt</Link>
+                  <Link to="/">T-shirt</Link>
                 </li>
                 <li>
-                  <Link>Sweatshirt</Link>
+                  <Link to="/">Sweatshirt</Link>
                 </li>
                 <li>
-                  <Link>Forma</Link>
+                  <Link to="/">Forma</Link>
                 </li>
                 <li>
-                  <Link>Outdoor Giyim</Link>
+                  <Link to="/">Outdoor Giyim</Link>
                 </li>
                 <li>
-                  <Link>Outdoor Ayakkabı</Link>
+                  <Link to="/">Outdoor Ayakkabı</Link>
                 </li>
                 <li>
-                  <Link>Spor Ekipmanları</Link>
+                  <Link to="/">Spor Ekipmanları</Link>
                 </li>
                 <li>
-                  <Link>Outdoor Ekipmanları</Link>
+                  <Link to="/">Outdoor Ekipmanları</Link>
                 </li>
                 <li>
-                  <Link>Sporcu Besinleri</Link>
+                  <Link to="/">Sporcu Besinleri</Link>
                 </li>
                 <li>
-                  <Link>Sporcu Aksesuarları</Link>
+                  <Link to="/">Sporcu Aksesuarları</Link>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <Link style={{ fontSize: "1rem" }}>Elektronik</Link>
+                  <Link to="/" style={{ fontSize: "1rem" }}>Elektronik</Link>
                 </li>
                 <li>
-                  <Link>Traş Makinesi</Link>
+                  <Link to="/">Traş Makinesi</Link>
                 </li>
                 <li>
-                  <Link>Cep Telefonu</Link>
+                  <Link to="/">Cep Telefonu</Link>
                 </li>
                 <li>
-                  <Link>Akıllı Saat</Link>
+                  <Link to="/">Akıllı Saat</Link>
                 </li>
                 <li>
-                  <Link>Bilgisayar</Link>
+                  <Link to="/">Bilgisayar</Link>
                 </li>
                 <li>
-                  <Link>Oyun & Konsollar</Link>
+                  <Link to="/">Oyun & Konsollar</Link>
                 </li>
                 <li>
-                  <Link>Akıllı Bileklik </Link>
+                  <Link to="/">Akıllı Bileklik </Link>
                 </li>
               </ul>
             </div>
