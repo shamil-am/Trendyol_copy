@@ -1,8 +1,10 @@
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
-import Navigator from './components/Navigator'
 //
-import Header from "./components/Header"
+import Header from "./components/Header";
+import Dashboard from "./components/Dashboard";
+import Navigator from "./components/Navigator";
+
 //
 
 const styles = {
@@ -18,8 +20,9 @@ const App = (props) => {
   const { classes } = props;
   return (
     <Grid container className={classes.container}>
-      <Header/>
-      <Navigator/>
+      <Header />
+      <Navigator />
+      <Dashboard />
     </Grid>
   );
 };

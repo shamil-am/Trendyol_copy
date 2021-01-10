@@ -262,7 +262,7 @@ class Navigator extends Component {
                   <Link>T-shirt</Link>
                 </li>
                 <li>
-                  <Link>Seartshirt</Link>
+                  <Link>Sweartshirt</Link>
                 </li>
                 <li>
                   <Link>Kazak & Hırka</Link>
@@ -292,87 +292,91 @@ class Navigator extends Component {
                   <Link>Şort</Link>
                 </li>
               </ul>
-              <ul>
-                <li>
-                  <Link style={{ fontSize: "1rem" }}>Ayakkabı</Link>
-                </li>
-                <li>
-                  <Link>Spor Ayakkabı</Link>
-                </li>
-                <li>
-                  <Link>Günlük Ayakkabı</Link>
-                </li>
-                <li>
-                  <Link>Sneaker</Link>
-                </li>
-                <li>
-                  <Link>Klassik</Link>
-                </li>
-                <li>
-                  <Link>Koşu & Antreman</Link>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <Link style={{ fontSize: "1rem" }}>
-                    Kozmetik & Kişisel Bakım
-                  </Link>
-                </li>
-                <li>
-                  <Link>Parfüm</Link>
-                </li>
-                <li>
-                  <Link>Cinsel Sağlık</Link>
-                </li>
-                <li>
-                  <Link>Traş Makinesi</Link>
-                </li>
-                <li>
-                  <Link>Traş Bıçağı</Link>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <Link style={{ fontSize: "1rem" }}>
-                    Saat & Gözlük & Aksesuar
-                  </Link>
-                </li>
-                <li>
-                  <Link>Saat</Link>
-                </li>
-                <li>
-                  <Link>Güneş Gözlüğü</Link>
-                </li>
-                <li>
-                  <Link>Cüzdan</Link>
-                </li>
-                <li>
-                  <Link>Kemer</Link>
-                </li>
-                <li>
-                  <Link>Çanta</Link>
-                </li>
-                <li>
-                  <Link>Erkek Takı</Link>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <Link>İç Giyim</Link>
-                </li>
-                <li>
-                  <Link>Boxer</Link>
-                </li>
-                <li>
-                  <Link>Çorap</Link>
-                </li>
-                <li>
-                  <Link>Pijama</Link>
-                </li>
-                <li>
-                  <Link>Atlet</Link>
-                </li>
-              </ul>
+              <div>
+                <ul>
+                  <li>
+                    <Link style={{ fontSize: "1rem" }}>Ayakkabı</Link>
+                  </li>
+                  <li>
+                    <Link>Spor Ayakkabı</Link>
+                  </li>
+                  <li>
+                    <Link>Günlük Ayakkabı</Link>
+                  </li>
+                  <li>
+                    <Link>Sneaker</Link>
+                  </li>
+                  <li>
+                    <Link>Klassik</Link>
+                  </li>
+                  <li>
+                    <Link>Koşu & Antreman</Link>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <Link style={{ fontSize: "1rem" }}>
+                      Kozmetik & Kişisel Bakım
+                    </Link>
+                  </li>
+                  <li>
+                    <Link>Parfüm</Link>
+                  </li>
+                  <li>
+                    <Link>Cinsel Sağlık</Link>
+                  </li>
+                  <li>
+                    <Link>Traş Makinesi</Link>
+                  </li>
+                  <li>
+                    <Link>Traş Bıçağı</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <Link style={{ fontSize: "1rem" }}>
+                      Saat & Gözlük & Aksesuar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link>Saat</Link>
+                  </li>
+                  <li>
+                    <Link>Güneş Gözlüğü</Link>
+                  </li>
+                  <li>
+                    <Link>Cüzdan</Link>
+                  </li>
+                  <li>
+                    <Link>Kemer</Link>
+                  </li>
+                  <li>
+                    <Link>Çanta</Link>
+                  </li>
+                  <li>
+                    <Link>Erkek Takı</Link>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <Link style={{ fontSize: "1rem" }}>İç Giyim</Link>
+                  </li>
+                  <li>
+                    <Link>Boxer</Link>
+                  </li>
+                  <li>
+                    <Link>Çorap</Link>
+                  </li>
+                  <li>
+                    <Link>Pijama</Link>
+                  </li>
+                  <li>
+                    <Link>Atlet</Link>
+                  </li>
+                </ul>
+              </div>
               <ul>
                 <li>
                   <Link style={{ fontSize: "1rem" }}>Spor & Outdoor</Link>
