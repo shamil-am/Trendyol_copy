@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
+import Central from './Central'
 //
 
 const styles = {
@@ -34,11 +35,11 @@ const styles = {
           position: "absolute",
           bottom: "0",
           left: "50%",
-          backgroundColor: "#f28283",
+          backgroundColor: Central.hoveredColor,
           transition: ".2s",
         },
         "&:hover": {
-          color: "#f28232",
+          color: Central.hoveredColor,
           "&::before": {
             width: "100%",
             left: "0",
@@ -72,7 +73,7 @@ const styles = {
           fontSize: "0.75rem",
           transition: "all .2s",
           "&:hover": {
-            color: "#f28283",
+            color: Central.hoveredColor,
           },
         },
       },

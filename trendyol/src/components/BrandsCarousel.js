@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
+import Central from "./Central";
 
 //
 import sanaOzel from "../images/carouselBrands/seninicin.png";
@@ -91,7 +92,7 @@ const styles = {
       fontSize: ".75rem",
       fontWeight: "600",
       "&:hover .imageHolder": {
-        border: "1px solid #f28283",
+        border: `1px solid ${Central.hoveredColor}`,
       },
       "&:hover span": {
         color: "#f28283",

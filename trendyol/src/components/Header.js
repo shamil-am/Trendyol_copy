@@ -10,6 +10,7 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import PersonIcon from "@material-ui/icons/Person";
+import Central from "./Central";
 
 //
 import logo from "../images/logo.svg";
@@ -125,7 +126,7 @@ class Header extends Component {
                 <PersonOutlineIcon />
               ) : (
                 <>
-                  <PersonIcon style={{ color: "#f28232" }} />
+                  <PersonIcon style={{ color: Central.hoveredColor }} />
                   <AccountNavigator />
                 </>
               )}
@@ -142,7 +143,7 @@ class Header extends Component {
               {this.state.heartIcon === "notHovered" ? (
                 <FavoriteBorderIcon />
               ) : (
-                <FavoriteIcon style={{ color: "#f28232" }} />
+                <FavoriteIcon style={{ color: Central.hoveredColor }} />
               )}
 
               <Typography variant="caption">Favorilerim</Typography>
@@ -160,7 +161,7 @@ class Header extends Component {
                   color:
                     this.state.cartIcon === "notHovered"
                       ? "inherit"
-                      : "#f28232",
+                      : Central.hoveredColor,
                 }}
               />
               <Typography variant="caption">Sepetim</Typography>

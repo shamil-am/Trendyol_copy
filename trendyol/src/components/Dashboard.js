@@ -1,26 +1,36 @@
 import React, { Component } from "react";
 import BrandsCarousel from "./BrandsCarousel";
-import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import MainInDashboard from "./MainInDashboard";
+import ManMainInDashboard from "./ManMainInDashboard";
+import { Switch, Route } from "react-router-dom";
+import WomanMainInDashboard from "./WomanMainInDashboard";
+import ChildrenMainInDashboard from "./ChildrenMainInDashboard";
 //
-const styles = {
-  dashboard: {
-    maxWidth: "1140px",
-    // backgroundColor: "red",
-  },
-};
+
 //
 class Dashboard extends Component {
   render() {
     return (
-      <Grid className={this.props.classes.dashboard} container>
+      <Grid container>
         <Grid item xs={12} sm={12}>
-          <BrandsCarousel />
-          <MainInDashboard/>
+          <Switch>
+            <Route exact path="/kadin">
+              <BrandsCarousel />
+              <WomanMainInDashboard />
+            </Route>
+            <Route exact path="/erkek">
+              <BrandsCarousel />
+              <ManMainInDashboard />
+            </Route>
+            <Route exact path="/cocuk">
+              <BrandsCarousel />
+              <ChildrenMainInDashboard />
+            </Route>
+            <Route>note yet</Route>
+          </Switch>
         </Grid>
       </Grid>
     );
   }
 }
-export default withStyles(styles)(Dashboard);
+export default Dashboard;

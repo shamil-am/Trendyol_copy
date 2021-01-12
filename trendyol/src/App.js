@@ -1,9 +1,12 @@
+import React, { Component } from "react";
+
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 //
 import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import Navigator from "./components/Navigator";
+
 
 //
 
@@ -16,15 +19,16 @@ const styles = {
   },
 };
 
-const App = (props) => {
-  const { classes } = props;
-  return (
-    <Grid container className={classes.container}>
-      <Header />
-      <Navigator />
-      <Dashboard />
-    </Grid>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <Grid container className={this.props.classes.container}>
+        <Header />
+        <Navigator />
+        <Dashboard />
+      </Grid>
+    );
+  }
+}
 
 export default withStyles(styles)(App);

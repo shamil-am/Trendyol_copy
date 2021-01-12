@@ -9,6 +9,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import Central from './Central'
 //
 
 const styles = {
@@ -32,7 +33,7 @@ const styles = {
         padding: ".5rem 0",
         transition: ".2s",
         "&:hover": {
-          color: "#f28232",
+          color: Central.hoveredColor,
         },
         "& svg": {
           fontSize: "1rem",
@@ -48,7 +49,7 @@ class AccountNavigator extends Component {
       <div className={this.props.classes.subMenu}>
         <ul>
           <li>
-            <p style={{ margin: "0", color: "#f28232" }}>Shamil Mammadov</p>
+            <p style={{ margin: "0", color: Central.hoveredColor }}>Shamil Mammadov</p>
           </li>
           <li>
             <Link to="orders">
