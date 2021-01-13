@@ -78,7 +78,7 @@ class Header extends Component {
   };
   render() {
     return (
-      <Grid container style={{paddingBottom: "1rem"}}>
+      <Grid container style={{ paddingBottom: "1rem" }}>
         <Grid
           item
           xs={12}
@@ -117,7 +117,7 @@ class Header extends Component {
           <Grid>
             <Link
               className="accountMain"
-              to="account"
+              to="siparislerim"
               onMouseEnter={() => this.setState({ accountIcon: "hovered" })}
               onMouseLeave={() => this.setState({ accountIcon: "notHovered" })}
               style={{ position: "relative" }}

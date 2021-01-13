@@ -88,7 +88,7 @@ class Navigator extends Component {
       <div style={{ width: "100%", paddingBottom: "1rem" }}>
         <ul className={this.props.classes.navigatorUl}>
           <li>
-            <Link to="kadin">KADIN</Link>
+            <Link to="/kadin">KADIN</Link>
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
@@ -279,7 +279,7 @@ class Navigator extends Component {
             </div>
           </li>
           <li>
-            <Link to="erkek">ERKEK</Link>
+            <Link to="/erkek">ERKEK</Link>
             <div className={`submenu ${this.props.classes.submenu}`}>
               <ul>
                 <li>
@@ -490,7 +490,7 @@ class Navigator extends Component {
             </div>
           </li>
           <li>
-            <Link to="cocuk">ÇOCUK</Link>
+            <Link to="/cocuk">ÇOCUK</Link>
             <div className={`submenu ${this.props.classes.submenu}`}>
               <div>
                 <ul>

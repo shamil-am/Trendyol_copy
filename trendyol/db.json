@@ -123,6 +123,67 @@
       "href": "https://cdn.dsmcdn.com/ty52/campaign/banners/original/548950/8c1aa1e9cb_2_new.jpg  "
     }
   ],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "childrenmainpage": [
+    {
+      "id": 1,
+      "title": "LC Waikiki- Yetişkin & Çocuk & Ev",
+      "href": "https://cdn.dsmcdn.com/ty52/campaign/banners/original/533989/5d9b34eab9_3_new.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Süpermarkette Alışveriş Festivali",
+      "href": "https://cdn.dsmcdn.com/ty54/campaign/banners/original/549589/ad7eded5ec_3_new.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Koton - Kadın & Erkek & Çocuk Tekstil",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2021/1/8/KotonKadinErkekCocukTekstil_section3_202101080809_webBig.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Prima Alışveriş Günleri",
+      "href": "https://cdn.dsmcdn.com/ty54/campaign/banners/original/549013/3ae8dd40ac_3_new.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Defacto - Kadın & Erkek & Çocuk Tekstil",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2021/1/8/DefactoKadinErkekCocukTekstil_section3_202101081706_webBig.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Panço",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2020/12/31/Panco_section3_202012311208_webBig.jpg"
+    },
+    {
+      "id": 7,
+      "title": "BG Store - Çocuk Koleksiyonu",
+      "href": "https://cdn.dsmcdn.com/ty41/campaign/banners/original/547324/a2670923d4_0_new.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Mobilyada Çocuk Şenliği",
+      "href": "https://cdn.dsmcdn.com/ty53/campaign/banners/original/549876/8148e4c6ca_3_new.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Panço - Çocuk Koleksiyonu",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2021/1/13/PancoCocukKoleksiyonu_section3_202101131507_webBig.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Denokids & Mushi",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2020/12/30/DenokidsMushi_section3_202012300907_webBig.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Araç Gereç & Anne Bebek Bakım Karnavalı",
+      "href": "https://cdn.dsmcdn.com/ty55/campaign/banners/original/548799/46f69c6e97_3_new.jpg"
+    },
+    {
+      "id": 12,
+      "title": "U.S Polo Assn. Kadın&Erkek&Çocuk Tekstil",
+      "href": "https://cdn.dsmcdn.com/marketing/datascience/automation/BrandBoutique/2021/1/12/USPoloAssnKadinErkekCocukTekstil_section3_202101121807_webBig.jpg"
+    }
+  ],
   "profile": { "name": "typicode" }
 }

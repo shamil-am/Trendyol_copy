@@ -80,6 +80,10 @@ class WomanMainInDashboard extends Component {
     } catch (error) {
       console.log(error);
     }
+
+    let a = document.querySelector("a[href='/kadin']");
+    a.style.backgroundColor = Central.hoveredColor;
+    a.style.color = "#fff";
   }
   componentWillUnmount() {
     let a = document.querySelector("a[href='/kadin']");
@@ -102,7 +106,7 @@ class WomanMainInDashboard extends Component {
         }}
       >
         <Loader
-          type="Oval"
+          type="ThreeDots"
           color={Central.hoveredColor}
           height={100}
           width={100}
@@ -111,6 +115,7 @@ class WomanMainInDashboard extends Component {
       </Grid>
     );
   };
+
   renderCards = () => {
     return (
       <>
@@ -137,6 +142,7 @@ class WomanMainInDashboard extends Component {
       </>
     );
   };
+
   render() {
     return (
       <Grid container>

@@ -52,7 +52,7 @@ class AccountNavigator extends Component {
             <p style={{ margin: "0", color: Central.hoveredColor }}>Shamil Mammadov</p>
           </li>
           <li>
-            <Link to="orders">
+            <Link to="/siparislerim">
               <AllInboxIcon />
               <span>Siparişlerim</span>
             </Link>

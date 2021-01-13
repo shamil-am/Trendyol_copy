@@ -3,6 +3,8 @@ import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import Loader from "react-loader-spinner";
+
 //
 import Central from "../components/Central";
 
@@ -61,24 +63,57 @@ const classes = {
 class ManMainInDashboard extends Component {
   state = {
     images: [],
+    hasLoaded: false,
   };
-  componentDidMount() {
+  async componentDidMount() {
     let a = document.querySelector("a[href='/erkek']");
     a.style.backgroundColor = Central.hoveredColor;
     a.style.color = "#ffffff";
-    fetch("http://localhost:3000/manmainpage")
-      .then((resp) => resp.json())
-      .then((res) => this.setState({ images: res }));
+    try {
+      const url = "http://localhost:3000/manmainpage";
+      let response = await fetch(url);
+      let result = await response.json();
+      setTimeout(() => {
+        this.setState({ images: result, hasLoaded: !this.state.hasLoaded });
+      }, 500);
+    } catch (error) {
+      console.log(error);
+    }
   }
   componentWillUnmount() {
     let a = document.querySelector("a[href='/erkek']");
     a.style.backgroundColor = "#ffffff";
     a.style.color = "#333";
   }
-  render() {
+
+  renderLoader = () => {
     return (
-      <Grid container>
-        <Grid item sm={12} md={8} lg={9}>
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        style={{
+          height: "50vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
+        <Loader
+          type="ThreeDots"
+          color={Central.hoveredColor}
+          height={100}
+          width={100}
+          timeout={3000} //3 secs
+        />
+      </Grid>
+    );
+  };
+  renderCards = () => {
+    return (
+      <>
+        <Grid item xs={12} sm={12} md={8} lg={9}>
           {this.state.images.map((card) => (
             <div className={this.props.classes.cardHolder} key={card.id}>
               <div className="imageHolder">
@@ -96,9 +131,19 @@ class ManMainInDashboard extends Component {
           ))}
         </Grid>
 
-        <Grid item sm={12} md={4} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
           right
         </Grid>
+      </>
+    );
+  };
+
+  render() {
+    return (
+      <Grid container>
+        {this.state.hasLoaded === true
+          ? this.renderCards()
+          : this.renderLoader()}
       </Grid>
     );
   }

@@ -26,6 +26,9 @@ class Dashboard extends Component {
               <BrandsCarousel />
               <ChildrenMainInDashboard />
             </Route>
+            <Route exact path="/hesabim/siparislerim">
+              <h2>Hesabim</h2>
+            </Route>
             <Route>note yet</Route>
           </Switch>
         </Grid>
